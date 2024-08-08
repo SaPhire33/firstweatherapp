@@ -15,30 +15,41 @@
   <body>
     <div class="application">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city" required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Zurich</h1>
-          <p>
-            Monday 17:37, cloudy
-            <br />
-            Humidity: 80%, Wind 4.44km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Zurich</h1>
+            <p class="weather-app-details">
+              Monday 17:37, cloudy
+              <br />
+              Humidity: <strong>80%</strong>, Wind: <strong>4.44km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">⛅</div>
+            <div class="weather-app-temperature">28</div>
+            <div class="weather-app-temperature-unit">°C</div>
+          </div>
         </div>
-        <div>⛅ 28°C</div>
       </main>
       <footer>
         This project was coded by
         <a href="https://github.com/SaPhire33" target="_blank">Sarah Phang</a>
-        with is open-sourced on
+        , open-sourced in
         <a href="https://github.com/SaPhire33/firstweatherapp" target="_blank"
           >Github</a
         >
-        and hosted on
+        ,hosted on
         <a href="https://saphire-weather-app.netlify.app/" target="_blank"
           >Netlify</a
         >
