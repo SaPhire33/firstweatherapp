@@ -97,3 +97,5 @@ function displayForecast(response) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", processSearch);
+
+searchCity("Zurich");
